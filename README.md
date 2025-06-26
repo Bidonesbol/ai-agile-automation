@@ -1,4 +1,4 @@
-# AI-Powered Agile QA Automation Pipeline
+# AI-Powered Agile Story Generator
 
 A fully automated pipeline that transforms raw Confluence design documentation into structured Jira stories — complete with AI-generated summaries, acceptance criteria, business rules, and direct upload to Jira. Matching design images are also attached automatically.
 
@@ -59,17 +59,18 @@ It supports faster iteration cycles, improves story quality from day one, and mi
 ## 📁 Project Structure
 
 ```
-pipeline_1_fetch_confluence/         # Script to fetch and clean Confluence content
-pipeline_2_stories_to_jira/         # Story generation + Jira upload
-  ├── upload_stories_to_jira.py
-pipeline_3_run_full_pipeline/       # End-to-end orchestrator
-  ├── run_full_pipeline.py
-utils/                              # Shared tools and helpers
+pipeline_1_product_to_stories/     # Fetch and parse Confluence content, generate stories
   ├── confluence_fetcher.py
-  ├── ai_prompting.py
-  ├── jira_api_helpers.py
-images/                             # Uploaded and matched screenshots
-env/                                # Local virtualenv
+  ├── fetched_content.json
+  ├── generate_stories_from_confluence.py
+  ├── generated_stories.json
+  ├── testjson.py
+public_images/                     # Folder with uploaded/matched images
+pipeline_2_stories_to_jira/       # Upload stories to Jira
+  ├── upload_stories_to_jira.py
+utils/                             # Shared helpers
+  ├── markdown_to_adf.js
+run_full_pipeline.py              # Script to run the full pipeline
 README.md
 ```
 
@@ -104,7 +105,7 @@ README.md
 
 4. Run the full pipeline:
    ```bash
-   python pipeline_3_run_full_pipeline/run_full_pipeline.py
+   python run_full_pipeline.py
    ```
 
 ---
