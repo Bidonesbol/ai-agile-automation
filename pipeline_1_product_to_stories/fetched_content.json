@@ -1,0 +1,32 @@
+{
+  "title": "Mock Feature \u2013 User Profile Redesign",
+  "version": 2,
+  "content": "<p>We are undertaking a full redesign of the User Profile screen to enhance usability, visual hierarchy, and cross-platform consistency. The current design lacks modularity, and the layout fails to accommodate key features like identity verification, editable content, and responsive behavior on mobile and tablet devices.</p><p>The new layout introduces a <strong>profile header section</strong> prominently featuring the user's <strong>profile picture</strong>, <strong>full name</strong>, and <strong>verification badge</strong> (if applicable). Users can tap or click the profile photo to launch a <strong>modal-based image cropper</strong> that allows real-time adjustment before saving. Next to the name, a <strong>&ldquo;Verified User&rdquo; label</strong> will appear if verification is complete, or a &ldquo;Get Verified&rdquo; call-to-action will appear otherwise.</p><p>Below the header, we introduce a <strong>tabular icon layout</strong> to visually group secondary metadata:</p><ul><li><p><strong>Followers</strong> (icon + count)</p></li><li><p><strong>Location</strong> (city + country)</p></li><li><p><strong>Occupation</strong></p></li><li><p><strong>Email address</strong> (partially masked for privacy)</p></li></ul><p>Each of these fields will have an edit icon (\u270e) for quick access to their respective edit modals.</p><p>Following the metadata section, the new design includes a <strong>dedicated bio section</strong> with expandable/collapsible long-form content. Bios exceeding 400 characters will be truncated with a &quot;Show More&quot; link. All text areas will adopt dynamic theming (light/dark mode), including adaptive font sizing for accessibility.</p><p>The entire layout is built using <strong>a 12-column responsive grid</strong>, ensuring full compatibility with:</p><ul><li><p>\ud83d\udda5\ufe0f Desktop (&ge;1024px)  </p></li><li><p>\ud83d\udcf1 Mobile (&le;768px)  </p></li><li><p>\ud83e\uddfe Tablet (768px&ndash;1024px)</p></li></ul><p>Additional visual changes include:</p><ul><li><p>Rounded profile images (120px max diameter)</p></li><li><p>Ghost-style edit buttons (bordered, no fill)</p></li><li><p>Monospaced font for user handles</p></li><li><p>Verified badge styled using platform&rsquo;s primary brand color</p></li><li><p>Tooltips on hover/tap for field descriptions</p></li></ul><p>All components follow the company&rsquo;s <strong>Atomic Design</strong> system guidelines and are fully supported by our Figma token set.</p><hr /><p>\ud83d\udee0\ufe0f <strong>MVP</strong>:  </p><ul><li><p>UI implementation for Web and iOS  </p></li><li><p>Editable field behavior  </p></li><li><p>Modal logic and responsive layout  </p></li><li><p>Partial dark mode theming  </p></li></ul><hr /><h3>Wireframe / Design Reference</h3><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"768\" ac:original-width=\"512\" ac:custom-width=\"true\" ac:alt=\"image-20250626-142825.png\" ac:width=\"512\"><ri:attachment ri:filename=\"image-20250626-142825.png\" ri:version-at-save=\"1\" /><ac:caption><p>MOBILE UI layout for User Profile screen &ndash; version 2 wireframe mockup</p></ac:caption></ac:image><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"512\" ac:original-width=\"512\" ac:custom-width=\"true\" ac:alt=\"image-20250626-143724.png\" ac:width=\"512\"><ri:attachment ri:filename=\"image-20250626-143724.png\" ri:version-at-save=\"1\" /><ac:caption><p>DESKTOP UI layout for User Profile screen &ndash; version 2 wireframe mockup</p></ac:caption></ac:image><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"512\" ac:original-width=\"768\" ac:custom-width=\"true\" ac:alt=\"image-20250626-143853.png\" ac:width=\"760\"><ri:attachment ri:filename=\"image-20250626-143853.png\" ri:version-at-save=\"1\" /><ac:caption><p>Design Reference Mobile/Desktop</p></ac:caption></ac:image><p /><p />",
+  "images": [
+    {
+      "filename": "image-20250626-143853.png",
+      "imgur_url": "https://i.imgur.com/pmIUrjv.png",
+      "caption": "Design Reference Mobile/Desktop"
+    },
+    {
+      "filename": "image-20250626-143836.png",
+      "imgur_url": "https://i.imgur.com/Y51fsbW.png",
+      "caption": ""
+    },
+    {
+      "filename": "image-20250626-143724.png",
+      "imgur_url": "https://i.imgur.com/9wMBuel.png",
+      "caption": "DESKTOP UI layout for User Profile screen \u2013 version 2 wireframe mockup"
+    },
+    {
+      "filename": "image-20250626-143651.png",
+      "imgur_url": "https://i.imgur.com/KAKW3r2.png",
+      "caption": ""
+    },
+    {
+      "filename": "image-20250626-142825.png",
+      "imgur_url": "https://i.imgur.com/gRmaqGG.png",
+      "caption": "MOBILE UI layout for User Profile screen \u2013 version 2 wireframe mockup"
+    }
+  ]
+}
